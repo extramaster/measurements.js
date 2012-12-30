@@ -1,0 +1,83 @@
+.topbarSpacer {
+    height: 41px;
+}
+
+#masterTable {
+    table-layout: fixed;
+    max-width: 100%;
+    width: 100%;
+    background-color: #BFEBFF;
+    border-radius: 20px;
+}
+
+#masterTable tr {
+    width: 100%;
+}
+
+#masterTable td {
+    word-wrap: break-word;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.context {
+    background-color: #00DBDB;
+    color: white;
+}
+
+.even {
+    background-color: #9EE1FF;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5;
+    background-color: whiteSmoke;
+}
+
+.subhead {
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+
+code {
+    color: #0D95AD !important;
+}
+
+.banner {
+    position: relative;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+    background: rgb(66,208,247);
+    background: -moz-linear-gradient(top, rgba(66,208,247,1) 0%, rgba(99,230,242,1) 50%, rgba(73,218,237,1) 52%, rgba(152,245,249,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(66,208,247,1)), color-stop(50%,rgba(99,230,242,1)), color-stop(52%,rgba(73,218,237,1)), color-stop(100%,rgba(152,245,249,1)));
+    background: -webkit-linear-gradient(top, rgba(66,208,247,1) 0%,rgba(99,230,242,1) 50%,rgba(73,218,237,1) 52%,rgba(152,245,249,1) 100%);
+    background: -o-linear-gradient(top, rgba(66,208,247,1) 0%,rgba(99,230,242,1) 50%,rgba(73,218,237,1) 52%,rgba(152,245,249,1) 100%);
+    background: -ms-linear-gradient(top, rgba(66,208,247,1) 0%,rgba(99,230,242,1) 50%,rgba(73,218,237,1) 52%,rgba(152,245,249,1) 100%);
+    background: linear-gradient(to bottom, rgba(66,208,247,1) 0%,rgba(99,230,242,1) 50%,rgba(73,218,237,1) 52%,rgba(152,245,249,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42d0f7', endColorstr='#98f5f9',GradientType=0 );
+    -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+    -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+    box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+}
+
+.banner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(background.png) repeat center center;
+    opacity: .4;
+}
+
+.democontainer {
+    text-align: center;
+}

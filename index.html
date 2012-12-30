@@ -1,0 +1,332 @@
+<!-- The main project page, uses code from the twitter bootstrap project -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Js Measurements Converters
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="eXtraMaster">
+    <!-- Re[Le]vant Bootstrap styles -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+  <!-- Some other CSS meant for the demo only.. -->
+  <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- The code that is basically what this entire project revolves around, jQuery isn't needed and also, the code is needed to be ran as soon as the page starts loading.. so at the top of the body it goes.. -->
+    <script src="metrics.js">
+    </script>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+		<div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar">
+              </span>
+              <span class="icon-bar">
+              </span>
+              <span class="icon-bar">
+              </span>
+          </button>
+          <a class="brand" href="#head">
+            Js Measurements Converters
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li id="about-button" class="">
+                <a href="#about">
+                  About
+                </a>
+              </li>
+              <li id="download-button" class="">
+                <a href="#download">
+                  Download
+                </a>
+              </li>
+              <li id="docs-button" class="">
+                <a href="#docs">
+                  Documentation
+                </a>
+              </li>
+              <li id="table-button" class="">
+                <a href="#table">
+                  Conversion Values
+                </a>
+              </li>
+              <li id="demo-button" class="">
+                <a href="#demo">
+                  Demo
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+  </div>
+  </div>
+  <header class="banner subhead" id="head">
+    <div class="container">
+      <div class="topbarSpacer">
+      </div>
+      <h1>
+        Measurements Converters
+      </h1>
+    </div>
+  </header>
+  <section id="about" class="about">
+    <div class="container">
+      <div class="topbarSpacer">
+      </div>
+      <h2 id="about" name="about">
+        About
+      </h2>
+      <p>
+		Measurements Converters is a measurement unit conversion library that aims to include all different type of measurement units from different measurement systems together, with an included function allows for the easy conversion of measurement values inside of the library measurements table. This project is licensed under a 
+      <a href="https://github.com/extramaster/measurementsConverters/blob/master/LICENSE.md">
+        MIT license
+      </a>
+      and is open to contributors. Project created by eXtraMaster
+  </h2>
+  </div>
+  </section>
+  <section id="download" class="download">
+	<div class="container">
+      <div class="topbarSpacer">
+      </div>
+      <h2 id="download" name="download">
+        Download
+      </h2>
+      <p>
+        You can download, commit and fork the code on github here: 
+        <a href="https://github.com/extramaster/measurementsConverters">
+          extramaster/measurementsConverters
+        </a>
+      </p>
+      </div>
+  </div>
+</section>
+<section id="docs" class="docs">
+  <div class="container">
+	<div class="topbarSpacer">
+  </div>
+  <h2 id="documentation" name="documentation">
+    Documentation
+  </h2>
+  <p>
+    The entire library is stored in a single variable, which is a wrapper that contains all the main functionalities.
+  </p>
+  <h3 id="wrapper" name="wrapper">
+    The wrapper
+  </h3>
+  <p>
+    <code>
+      conversionObject
+    </code>
+    is the name of the variable in which the library resides in and is split into 3 parts, as documented below
+  </p>
+  <h3 id="function" name="function">
+    The function
+  </h3>
+  <p>
+    There is only one function that is included with the library, under the 
+    <code>
+      functions
+    </code>
+    section. The use of which is as follows
+  </p>
+  <br>
+  <code>
+    conversionObject.functions.converter(context, from, to, subject)
+  </code>
+  <p>
+    Returns an integer when the proper values are inputted
+  </p>
+  <h5>
+    Context
+  </h5>
+  <p>
+    Specifies the measurement type that is currently being manupilated: e.g 
+    <code>
+      Angle
+    </code>
+  </p>
+  <h5>
+    From
+  </h5>
+  <p>
+    Specifies the current measurement unit that the value is in: e.g 
+    <code>
+      Degree
+    </code>
+  </p>
+  <h5>
+    To
+  </h5>
+  <p>
+    The measurement unit to be converted to: e.g 
+    <code>
+      Radian
+    </code>
+  </p>
+  <h5>
+    Subject
+  </h5>
+  <p>
+    The value to be processed as 
+    <code>
+      from
+    </code>
+  </p>
+  <h4>
+    Note!
+  </h4>
+  <p>
+    Please note that the 
+    <code>
+      context
+    </code>
+    <code>
+      from
+    </code>
+    and 
+    <code>
+      to
+    </code>
+    values are all case sentitive, and typically require the first letter to be capitialized, ie: 
+    <code>
+      Radian
+    </code>
+    is not the same as 
+    <code>
+      radian
+    </code>
+  </p>
+  <h3>
+    The table
+  </h3>
+  <p>
+    <code>
+      conversionObject.special
+    </code>
+    is where the irregular measurement conversions are stored
+  </p>
+  <p>
+    <code>
+      conversionObject.master
+    </code>
+    is where the linear and regular measurement conversions are stored
+  </p>
+  <p>
+    Both can be directly accessed and manupliated [as an array], however it is recommended to use the 
+    <code>
+      conversionObject.functions.converter
+    </code>
+    function to complete basic calculation tasks
+  </p>
+  </div>
+</section>
+<section id="table" class="table">
+  <div class="container">
+	<div class="topbarSpacer">
+  </div>
+  <h1>
+    Conversion values
+  </h1>
+  <noscript>
+	You must have javascript enabled to see the table!
+  </noscript>
+  <table id="masterTable" colspan="8">
+	<colgroup colspan="8">
+      <col>
+      <col class="even">
+      <col>
+      <col class="even">
+      <col>
+      <col class="even">
+      <col>
+      <col class="even">
+      </colgroup>
+      <thead>
+      </thead>
+      <tbody id="masterTableBody" colspan="8">
+      </tbody>
+  </table>
+  </div>
+</section>
+<section id="demo" class="demo">
+  <div class="container">
+	<div class="topbarSpacer">
+  </div>
+  <h2>
+    Demo
+  </h2>
+  <p>
+    Below are a couple of demonstrations of the library [view the page source to get the code!]
+  </p>
+  <div class="democontainer">
+    <h3>
+      Radians to Degrees
+    </h3>
+    <!-- Lol... The code that's used for the first demo.. Really, do you need this? Read the docs, that'll help you... -->
+    <form action="javascript:alert(conversionObject.functions.converter('Angle', 'Degree', 'Radian', document.getElementById('degToRad').value))">
+      <p>
+        <input type="text" id="degToRad">
+      </p>
+      <p>
+        <input type="submit" value="Convert">
+      </p>
+    </form>
+    <br>
+    <h3>
+      Full conversion
+    </h3>
+    <!-- The kinda complex code that powers the second demo, also, see docs.js -->
+    <form action="javascript:masterConvert()" id="masterForm">
+      <p>
+        Convert: 
+        <input type="text" id="fullValue">
+        from
+        <select id="fullFrom">
+        </select>
+        to
+        <select id="fullTo">
+        </select>
+        in
+        <select id="fullContext">
+        </select>
+      </p>
+      <p>
+        <input type="submit" value="Go!">
+      </p>
+    </form>
+  </div>
+  </div>
+</section>
+<!-- Footer
+================================================== -->
+<footer class="footer" id="footer">
+  <div class="container">
+	<p>
+      Coded by 
+      <a href="https://www.twitter.com/extradomination">
+        @eXtraMaster
+      </a>, Code licensed under The MIT license.
+  </p>
+  </div>
+</footer>
+<script type="text/javascript" src="docs.js">
+</script>
+<!-- Re[Le]vant Bootstrap javascript
+================================================== -->
+<script type="text/javascript" src="bootstrap/js/jquery.min.js">
+</script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js">
+</script>
+</body>
+</html>
